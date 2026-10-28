@@ -1,0 +1,43 @@
+:root{--ink:#14212b;--paper:#f6f8f9;--teal:#0f7b7f;--mute:#586873;--line:#d4dde2;--soft:#e8eef1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.85 "Noto Sans KR",system-ui,sans-serif;word-break:keep-all}
+a{color:var(--teal)}
+a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;gap:16px;flex-wrap:wrap}
+.brand{font:700 20px "Noto Serif KR",serif;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+nav a{margin-left:20px;color:var(--ink);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--teal)}
+.hero{padding:88px 0 72px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 47px,var(--soft) 47px,var(--soft) 48px)}
+.hero h1{font:700 clamp(32px,6vw,52px)/1.28 "Noto Serif KR",serif;margin:0 0 24px;max-width:15em}
+.hero p{max-width:34em;color:var(--mute);margin:0 0 32px}
+.hero .who{color:var(--ink);font-weight:500;margin-bottom:8px}
+.btns a{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:500;margin:0 10px 10px 0}
+.b1{background:var(--ink);color:#fff}.b2{border:1px solid var(--ink);color:var(--ink)}.b1:hover{background:var(--teal)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font:700 28px/1.4 "Noto Serif KR",serif;margin:0 0 28px}
+h3{font:700 20px/1.5 "Noto Serif KR",serif;margin:36px 0 8px}
+.about{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:start}
+.about img{width:100%;height:auto;border-radius:4px;display:block}
+.about p{margin:0 0 18px}
+dl{margin:0}dt{font-weight:700;margin-top:22px}dd{margin:4px 0 0;color:var(--mute)}
+.career dt{margin-top:14px;font-weight:500}.career dd{margin:0}
+.quote{border-left:3px solid var(--teal);padding:4px 0 4px 18px;margin:0 0 28px;max-width:34em}
+.phil p{margin:0 0 22px;max-width:36em}
+ul.posts{list-style:none;margin:0 0 24px;padding:0}
+ul.posts li{padding:16px 0;border-bottom:1px solid var(--line)}
+ul.posts a{color:var(--ink);text-decoration:none;font-weight:500}
+ul.posts a:hover{color:var(--teal);text-decoration:underline}
+ul.posts span{display:block;color:var(--mute);font-size:15px;font-weight:400}
+article{padding:56px 0 72px}
+article h1{font:700 clamp(28px,5vw,40px)/1.35 "Noto Serif KR",serif;margin:0 0 16px}
+article .meta{color:var(--mute);font-size:15px;margin-bottom:36px}
+article p,article li{max-width:38em}
+article ul{padding-left:20px}
+.note{background:var(--soft);padding:16px 20px;border-radius:4px;max-width:38em;font-size:15px;color:var(--mute)}
+footer{background:var(--ink);color:#c9d3d9;padding:40px 0;font-size:14px;line-height:1.7}
+footer a{color:#fff}
+@media (max-width:640px){.hero{padding:56px 0 48px}nav a{margin:0 14px 0 0}.about{grid-template-columns:1fr;gap:24px}.about img{max-width:300px}}
