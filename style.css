@@ -53,4 +53,3 @@ article h2{font:700 24px/1.4 "Noto Serif KR",serif;margin:0 0 12px}
 @media (max-width:560px){.pair{grid-template-columns:1fr}.pair img{height:380px}}
 .fnav{margin-bottom:12px}.fnav a{margin-right:20px}
 article h2{font:700 24px/1.4 "Noto Serif KR",serif;margin:40px 0 12px}
-.pair.wide img{width:auto;max-width:100%;height:auto;max-height:420px;margin:0 auto;background:none}
