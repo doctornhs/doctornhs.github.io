@@ -116,3 +116,7 @@ footer a{color:#fff}
   .quote{font-size:18px}
 }
 @media (max-width:560px){.pair{grid-template-columns:1fr}.pair img{height:380px}}
+
+/* image protection & copyright */
+img{-webkit-touch-callout:none;-webkit-user-drag:none;user-select:none}
+footer .copyright{font-size:13px;color:#9aa1ab;margin-top:6px}
