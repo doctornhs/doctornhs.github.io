@@ -120,3 +120,8 @@ footer a{color:#fff}
 /* image protection & copyright */
 img{-webkit-touch-callout:none;-webkit-user-drag:none;user-select:none}
 footer .copyright{font-size:13px;color:#9aa1ab;margin-top:6px}
+/* text protection: no selection except e-mail links and form fields */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+a[href^="mailto:"],input,textarea{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+/* print protection */
+@media print{body>*{display:none!important}body::before{content:"이 페이지는 인쇄할 수 없습니다.";display:block;font:700 22px "Noto Sans KR",sans-serif;margin:120px 40px 12px;color:#000}body::after{content:"글은 orthonam.com에서 읽어 주세요. © 남희승. 무단 복제와 재배포를 금합니다.";display:block;font:400 15px "Noto Sans KR",sans-serif;margin:0 40px;color:#333}}
