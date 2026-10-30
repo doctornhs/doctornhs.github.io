@@ -159,3 +159,16 @@ article .related ul.posts li{max-width:none}
 article .related h2{font-size:20px;margin:0 0 14px}
 @media (max-width:560px){.author-box{grid-template-columns:48px 1fr;gap:12px;padding:18px}.author-box img{width:48px;height:48px}}
 @media print{.author-box,.related,.refs-box{display:none}}
+
+/* share buttons */
+.share{margin:44px 0 0;padding:22px 0 6px;border-top:1px solid var(--line)}
+article .share p{max-width:none;margin:0}
+.share-t{font-size:15px;color:var(--mute);margin-bottom:12px!important}
+.share-b{display:flex;flex-wrap:wrap;gap:8px}
+.sb{display:inline-flex;align-items:center;gap:7px;font:500 15px "Noto Sans KR",sans-serif;padding:9px 16px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;cursor:pointer}
+.sb svg{width:18px;height:18px}
+.sb:hover{border-color:var(--accent);color:var(--accent)}
+.sb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.share-msg{font-size:14px;color:var(--accent);min-height:1.6em;margin-top:8px!important}
+.share + .refs-box{margin-top:28px}.share + .author-box{margin-top:28px}
+@media print{.share{display:none}}
