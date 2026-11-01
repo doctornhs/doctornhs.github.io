@@ -172,3 +172,7 @@ article .share p{max-width:none;margin:0}
 .share-msg{font-size:14px;color:var(--accent);min-height:1.6em;margin-top:8px!important}
 .share + .refs-box{margin-top:28px}.share + .author-box{margin-top:28px}
 @media print{.share{display:none}}
+
+/* surgical record link */
+.rec-link{margin:22px 0 0}.rec-link a{display:block;border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--card);padding:14px 18px;color:var(--ink);text-decoration:none;font-size:15.5px}.rec-link a span{font:700 16.5px var(--serif);color:var(--accent);margin-right:8px}.rec-link a:hover{border-color:var(--accent)}
+header nav,.fnav{display:flex;flex-wrap:wrap;align-items:center;row-gap:6px}header nav a,.fnav a{white-space:nowrap}
