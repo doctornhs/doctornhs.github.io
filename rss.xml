@@ -7,15 +7,15 @@
   <description>정형외과 전문의 남희승이 진료실에서 받는 질문과 실제 사례를 환자 눈높이로 정리한 칼럼입니다.</description>
   <language>ko</language>
   <copyright>© 남희승. 이 사이트의 글과 사진의 저작권은 남희승에게 있으며, 무단 복제와 재배포를 금합니다.</copyright>
-  <lastBuildDate>Sat, 31 Oct 2026 08:05:40 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 18:20:00 +0900</lastBuildDate>
   <item>
-    <title>만져지는 혹, 지방종일까 육종일까</title>
-    <link>https://orthonam.com/columns/soft-tissue-lump-lipoma-sarcoma.html</link>
-    <guid isPermaLink="true">https://orthonam.com/columns/soft-tissue-lump-lipoma-sarcoma.html</guid>
-    <description>몸에 만져지는 혹은 대부분 지방종 같은 양성이지만, 드물게 육종일 수 있습니다. 크기, 깊이, 커지는 속도, 통증으로 보는 경고 신호와 초음파·MRI·조직검사 순서, 함부로 떼어 내면 안 되는 이유를 정리했습니다.</description>
-    <category>종양</category>
+    <title>전방십자인대 재건술·반월상 연골판 봉합술 후 재활 안내</title>
+    <link>https://orthonam.com/edu-acl-meniscus-rehab.html</link>
+    <guid isPermaLink="true">https://orthonam.com/edu-acl-meniscus-rehab.html</guid>
+    <description>전방십자인대 재건술이나 반월상 연골판 봉합술을 받은 분을 위한 주차별 재활 안내입니다. 보조기 각도, 체중 부하, 목발 사용 일정과 단계별 운동을 정리했습니다.</description>
+    <category>환자 교육 자료</category>
     <author>doctornhs@naver.com (남희승)</author>
-    <pubDate>Fri, 20 Nov 2026 09:00:00 +0900</pubDate>
+    <pubDate>Sun, 01 Nov 2026 10:00:00 +0900</pubDate>
   </item>
   <item>
     <title>주사로 석회를 뽑았는데도 아프다면, 석회성 건염과 관절경 석회 제거술</title>
@@ -24,7 +24,16 @@
     <description>어깨 석회성 건염은 대부분 비수술 치료와 초음파 유도 석회 흡입술로 좋아집니다. 그래도 낫지 않는 경우에 관절경 석회 제거술이 어떤 역할을 하는지 연구와 실제 사례로 정리했습니다.</description>
     <category>어깨</category>
     <author>doctornhs@naver.com (남희승)</author>
-    <pubDate>Fri, 13 Nov 2026 09:00:00 +0900</pubDate>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>만져지는 혹, 지방종일까 육종일까</title>
+    <link>https://orthonam.com/columns/soft-tissue-lump-lipoma-sarcoma.html</link>
+    <guid isPermaLink="true">https://orthonam.com/columns/soft-tissue-lump-lipoma-sarcoma.html</guid>
+    <description>몸에 만져지는 혹은 대부분 지방종 같은 양성이지만, 드물게 육종일 수 있습니다. 크기, 깊이, 커지는 속도, 통증으로 보는 경고 신호와 초음파·MRI·조직검사 순서, 함부로 떼어 내면 안 되는 이유를 정리했습니다.</description>
+    <category>종양</category>
+    <author>doctornhs@naver.com (남희승)</author>
+    <pubDate>Sat, 31 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>어깨 위 뼈가 툭 튀어나왔어요, 견봉쇄골관절 탈구와 갈고리 금속판</title>
@@ -33,7 +42,7 @@
     <description>넘어진 뒤 어깨 위쪽 뼈가 튀어나왔다면 견봉쇄골관절 탈구일 수 있습니다. 탈구 정도에 따른 치료 선택과 갈고리 금속판(hook plate) 수술의 근거, 장단점을 정리했습니다.</description>
     <category>어깨</category>
     <author>doctornhs@naver.com (남희승)</author>
-    <pubDate>Fri, 06 Nov 2026 09:00:00 +0900</pubDate>
+    <pubDate>Sat, 31 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>관절경으로 본 연골판 뿌리 파열, 그리고 다시 묶기까지</title>
@@ -42,7 +51,7 @@
     <description>반월상 연골판 뿌리 파열이 무릎 안에서 실제로 어떻게 보이는지, 뼈 터널을 이용한 뿌리 봉합술 전후의 관절경 사진으로 설명합니다.</description>
     <category>무릎</category>
     <author>doctornhs@naver.com (남희승)</author>
-    <pubDate>Tue, 03 Nov 2026 09:00:00 +0900</pubDate>
+    <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>계단에서 ‘뚝’ 소리가 났다면, 반월상 연골판 뿌리 파열</title>
