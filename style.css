@@ -238,6 +238,7 @@ table.sched caption{text-align:left;font-weight:700;padding:0 0 8px;font-family:
 table.sched th,table.sched td{border:1px solid var(--line);padding:9px 12px;text-align:center;background:var(--card)}
 table.sched thead th{background:var(--soft);font-weight:600;font-size:14.5px;color:var(--mute)}
 table.sched tbody th{width:20%;font-weight:600}
+table.sched{table-layout:fixed;width:100%}table.sched thead th:first-child,table.sched tbody th{width:22%}table.sched td.sat{font-size:14.5px;color:var(--mute)}
 table.sched td.op{color:var(--accent);font-weight:600}
 html[data-fs] table.sched{font-size:15px}
 .site-tools .t-lang{font-weight:600}
