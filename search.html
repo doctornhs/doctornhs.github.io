@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="ko"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8K1SGGME15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8K1SGGME15');
+</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>검색 | orthonam 남희승</title><meta name="description" content="orthonam 사이트 안의 칼럼, 환자 교육 자료, 진료 분야, 수술 기록을 검색합니다."><meta name="robots" content="noindex,follow"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="alternate" hreflang="ko" href="https://orthonam.com/search.html"><link rel="alternate" hreflang="en" href="https://orthonam.com/en/search.html"><link rel="alternate" hreflang="x-default" href="https://orthonam.com/search.html"><link rel="canonical" href="https://orthonam.com/search.html"><meta property="og:type" content="website"><meta property="og:site_name" content="orthonam"><meta property="og:title" content="검색 | orthonam 남희승"><meta property="og:description" content="orthonam 사이트 안의 칼럼, 환자 교육 자료, 진료 분야, 수술 기록을 검색합니다."><meta property="og:url" content="https://orthonam.com/search.html"><script>try{var f=localStorage.getItem("orthonam-fs");if(f)document.documentElement.setAttribute("data-fs",f)}catch(e){}</script></head><body><header><div class="wrap"><a class="brand" href="index.html">orthonam</a><nav aria-label="주요 메뉴"><a href="about.html">소개</a><a href="record.html">수술 기록</a><a href="index.html#areas">진료 분야</a><a href="columns/index.html">칼럼</a><a href="education.html">환자 교육</a><a href="press.html">기고·언론</a><a href="contact.html">연락</a></nav></div></header><main><article><div class="wrap"><p class="eyebrow">Search</p><h1>검색</h1><p class="meta">칼럼, 환자 교육 자료, 진료 분야, 수술 기록에서 찾습니다.</p>
+<form class="sform" id="sf" role="search"><input type="search" id="q" name="q" placeholder="예: 어깨, 연골판, 인공관절 퇴원" aria-label="검색어" autocomplete="off" autofocus><button type="submit">검색</button></form>
+<p class="s-meta" id="meta" aria-live="polite"></p><ol class="sr" id="res" hidden></ol>
+<div id="sug"><h2>진료 분야로 찾기</h2><ul class="chips"><li><a href="area-knee.html">무릎</a></li><li><a href="area-hip.html">고관절</a></li><li><a href="area-shoulder.html">어깨</a></li><li><a href="area-foot-ankle.html">발과 발목</a></li><li><a href="area-hand-elbow.html">손과 팔꿈치</a></li><li><a href="area-fracture-sports.html">골절과 스포츠 손상</a></li><li><a href="area-tumor.html">혹과 종양</a></li></ul><h2>자주 찾는 주제</h2><ul class="chips"><li><a href="search.html?q=인공관절">인공관절</a></li><li><a href="search.html?q=연골판">연골판</a></li><li><a href="search.html?q=골절">골절</a></li><li><a href="search.html?q=재활">재활</a></li><li><a href="search.html?q=수술 후">수술 후</a></li><li><a href="search.html?q=어깨 통증">어깨 통증</a></li></ul></div>
+<noscript><p class="note">검색에는 자바스크립트가 필요합니다. <a href="columns/index.html">칼럼 목록</a>에서 분야별로 찾아볼 수도 있습니다.</p></noscript>
+<script>
+(function(){
+var q=document.getElementById('q'),res=document.getElementById('res'),meta=document.getElementById('meta'),sug=document.getElementById('sug'),data=null,last='',tm=null;
+function ns(t){return t.toLowerCase().replace(/\s+/g,'')}
+function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function rx(tokens){var parts=tokens.map(function(t){return t.split('').map(function(c){return c.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}).join('\\s*')});return new RegExp('('+parts.join('|')+')','gi')}
+function mark(s,re){return esc(s).replace(re,'<mark>$1</mark>')}
+function snip(e,tokens,re){var b=e.b,i=-1,m=new RegExp(rx(tokens).source,'i').exec(b);if(m)i=m.index;
+ if(i<0)return esc(e.s);var a=Math.max(0,i-50),z=Math.min(b.length,i+110);return (a>0?'… ':'')+mark(b.slice(a,z),re)+(z<b.length?' …':'')}
+function run(push){var v=q.value.trim();
+ if(push){try{history.replaceState(null,'',v?'?q='+encodeURIComponent(v):location.pathname)}catch(e){}}
+ if(!data)return;
+ if(!v){res.hidden=true;res.innerHTML='';sug.hidden=false;meta.textContent='';return}
+ var tokens=v.split(/\s+/).filter(Boolean),nt=tokens.map(ns),out=[];
+ data.forEach(function(e){var sc=0,ok=true;
+  nt.forEach(function(t){var s=0;if(e._t.indexOf(t)>=0)s+=10;if(e._k.indexOf(t)>=0)s+=6;if(e._s.indexOf(t)>=0)s+=4;
+   var p=e._b.indexOf(t),c=0;while(p>=0&&c<5){c++;p=e._b.indexOf(t,p+t.length)}s+=c;if(!s)ok=false;sc+=s});
+  if(ok)out.push([sc,e])});
+ out.sort(function(a,b){return b[0]-a[0]});
+ sug.hidden=true;res.hidden=false;
+ if(!out.length){res.innerHTML='';meta.textContent='“'+v+'”에 맞는 글이 없습니다. 다른 단어로 검색하거나 아래 분야에서 찾아보세요.';sug.hidden=false;return}
+ meta.textContent='“'+v+'” 검색 결과 '+out.length+'건';
+ var re=rx(tokens);
+ res.innerHTML=out.slice(0,30).map(function(x){var e=x[1];return '<li><span class="kind">'+esc(e.c)+(e.g?'<i>'+esc(e.g)+'</i>':'')+(e.d?'<i>'+esc(e.d)+'</i>':'')+'</span><a href="'+e.u+'">'+mark(e.t,re)+'</a><p>'+snip(e,tokens,re)+'</p></li>'}).join('');
+ clearTimeout(tm);tm=setTimeout(function(){if(v.length>1&&v!==last&&window.gtag){last=v;try{gtag('event','search',{search_term:v})}catch(e){}}},1500);
+}
+document.getElementById('sf').addEventListener('submit',function(ev){ev.preventDefault();run(true)});
+q.addEventListener('input',function(){run(true)});
+fetch('search-index.json').then(function(r){return r.json()}).then(function(d){data=d.map(function(e){e._t=ns(e.t);e._s=ns(e.s);e._k=ns(e.k||'');e._b=ns(e.b);return e});
+ var m=/[?&]q=([^&]*)/.exec(location.search);if(m){try{q.value=decodeURIComponent(m[1].replace(/\+/g,' '))}catch(e){q.value=m[1]}}run(false)})
+ .catch(function(){meta.textContent='검색 색인을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'});
+})();
+</script></div></article></main><footer><div class="wrap"><nav class="fnav" aria-label="하단 메뉴"><a href="about.html">의사 소개</a><a href="record.html">수술 기록</a><a href="research.html">연구·논문</a><a href="education.html">환자 교육</a><a href="press.html">기고·언론</a><a href="contact.html">연락처</a><a href="privacy.html">개인정보처리방침</a></nav><p>이 사이트의 글은 일반적인 의학 정보이며 개인의 진단과 치료를 대신하지 않습니다. 증상이 있으면 가까운 의료기관에서 진료를 받으세요.</p><p>&copy; 2026 남희승. 이 사이트의 견해는 소속 기관의 공식 입장이 아닙니다.</p><p class="copyright">이 사이트의 글과 사진의 저작권은 남희승에게 있으며, 무단 복제와 재배포를 금합니다. 인용할 때는 출처(orthonam.com)를 밝혀 주세요.</p></div></footer><script>(function(){var KEYS={c:1,a:1,s:1,u:1,x:1,p:1};function okNode(n){while(n){if(n.nodeType===1&&n.matches&&n.matches('a[href^="mailto:"],input,textarea'))return true;n=n.parentNode;}return false;}function selOk(){var s=window.getSelection();return s&&s.rangeCount>0&&okNode(s.anchorNode)&&okNode(s.focusNode);}document.addEventListener("contextmenu",function(e){if(!okNode(e.target))e.preventDefault();});document.addEventListener("dragstart",function(e){e.preventDefault();});document.addEventListener("selectstart",function(e){if(!okNode(e.target))e.preventDefault();});document.addEventListener("keydown",function(e){var k=(e.key||"").toLowerCase();if((e.ctrlKey||e.metaKey)&&KEYS[k]&&!((k==="c"||k==="a")&&selOk())){e.preventDefault();}});document.addEventListener("copy",function(e){var s=window.getSelection(),t=s?String(s):"";if(!t||selOk()||!e.clipboardData)return;var src="\n\n출처: 남희승, orthonam.com "+location.href.split("#")[0]+"\n이 글의 저작권은 남희승에게 있으며 무단 복제와 재배포를 금합니다.";e.clipboardData.setData("text/plain",t+src);e.preventDefault();});})();</script><script src="site.js" defer></script></body></html>
