@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://orthonam.com/</loc><lastmod>2026-11-01</lastmod></url>
-<url><loc>https://orthonam.com/about.html</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://orthonam.com/about.html</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://orthonam.com/contact.html</loc><lastmod>2026-10-28</lastmod></url>
 <url><loc>https://orthonam.com/privacy.html</loc><lastmod>2026-10-28</lastmod></url>
 <url><loc>https://orthonam.com/columns/index.html</loc><lastmod>2026-10-30</lastmod></url>
@@ -22,4 +22,5 @@
 <url><loc>https://orthonam.com/record.html</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://orthonam.com/education.html</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://orthonam.com/edu-acl-meniscus-rehab.html</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://orthonam.com/research.html</loc><lastmod>2026-11-02</lastmod></url>
 </urlset>
