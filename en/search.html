@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8K1SGGME15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8K1SGGME15');
+</script>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Search | orthonam Hee Seung Nam</title><meta content="Search the columns, patient education materials, areas of practice and surgical records on orthonam." name="description"/><meta content="noindex,follow" name="robots"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="../style.css" rel="stylesheet"/><link href="https://orthonam.com/search.html" hreflang="x-default" rel="alternate"/><link href="https://orthonam.com/en/search.html" hreflang="en" rel="alternate"/><link href="https://orthonam.com/search.html" hreflang="ko" rel="alternate"/><link href="https://orthonam.com/en/search.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="orthonam" property="og:site_name"/><meta content="en_US" property="og:locale"/><meta content="Search | orthonam Hee Seung Nam" property="og:title"/><meta content="Search the columns, patient education materials, areas of practice and surgical records on orthonam." property="og:description"/><meta content="https://orthonam.com/en/search.html" property="og:url"/><script>try{var f=localStorage.getItem("orthonam-fs");if(f)document.documentElement.setAttribute("data-fs",f)}catch(e){}</script></head><body><header><div class="wrap"><a class="brand" href="index.html">orthonam</a><nav aria-label="Main menu"><a href="about.html">About</a><a href="record.html">Surgical Record</a><a href="index.html#areas">Areas of Practice</a><a href="columns/index.html">Columns</a><a href="education.html">Patient Education</a><a href="press.html">Press &amp; Writing</a><a href="contact.html">Contact</a></nav></div></header><main><article><div class="wrap"><p class="eyebrow">Search</p><h1>Search</h1><p class="meta">Search columns, patient education materials, areas of practice and the surgical record.</p>
+<form class="sform" id="sf" role="search"><input aria-label="Search terms" autocomplete="off" autofocus="" id="q" name="q" placeholder="e.g., shoulder, meniscus, hip replacement discharge" type="search"/><button type="submit">Search</button></form>
+<p aria-live="polite" class="s-meta" id="meta"></p><ol class="sr" hidden="" id="res"></ol>
+<div id="sug"><h2>Find by area of practice</h2><ul class="chips"><li><a href="area-knee.html">Knee</a></li><li><a href="area-hip.html">Hip</a></li><li><a href="area-shoulder.html">Shoulder</a></li><li><a href="area-foot-ankle.html">Foot &amp; Ankle</a></li><li><a href="area-hand-elbow.html">Hand &amp; Elbow</a></li><li><a href="area-fracture-sports.html">Fractures &amp; Sports Injuries</a></li><li><a href="area-tumor.html">Lumps &amp; Tumors</a></li></ul><h2>Popular topics</h2><ul class="chips"><li><a href="search.html?q=joint%20replacement">Joint replacement</a></li><li><a href="search.html?q=meniscus">Meniscus</a></li><li><a href="search.html?q=fracture">Fracture</a></li><li><a href="search.html?q=rehab">Rehab</a></li><li><a href="search.html?q=after%20surgery">After surgery</a></li><li><a href="search.html?q=shoulder%20pain">Shoulder pain</a></li></ul></div>
+<noscript><p class="note">Search needs JavaScript. You can also browse by area in the <a href="columns/index.html">column list</a>.</p></noscript>
+<script>
+(function(){
+var q=document.getElementById('q'),res=document.getElementById('res'),meta=document.getElementById('meta'),sug=document.getElementById('sug'),data=null,last='',tm=null;
+function ns(t){return t.toLowerCase().replace(/\s+/g,'')}
+function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function rx(tokens){var parts=tokens.map(function(t){return t.split('').map(function(c){return c.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}).join('\\s*')});return new RegExp('('+parts.join('|')+')','gi')}
+function mark(s,re){return esc(s).replace(re,'<mark>$1</mark>')}
+function snip(e,tokens,re){var b=e.b,i=-1,m=new RegExp(rx(tokens).source,'i').exec(b);if(m)i=m.index;
+ if(i<0)return esc(e.s);var a=Math.max(0,i-50),z=Math.min(b.length,i+110);return (a>0?'… ':'')+mark(b.slice(a,z),re)+(z<b.length?' …':'')}
+function run(push){var v=q.value.trim();
+ if(push){try{history.replaceState(null,'',v?'?q='+encodeURIComponent(v):location.pathname)}catch(e){}}
+ if(!data)return;
+ if(!v){res.hidden=true;res.innerHTML='';sug.hidden=false;meta.textContent='';return}
+ var tokens=v.split(/\s+/).filter(Boolean),nt=tokens.map(ns),out=[];
+ data.forEach(function(e){var sc=0,ok=true;
+  nt.forEach(function(t){var s=0;if(e._t.indexOf(t)>=0)s+=10;if(e._k.indexOf(t)>=0)s+=6;if(e._s.indexOf(t)>=0)s+=4;
+   var p=e._b.indexOf(t),c=0;while(p>=0&&c<5){c++;p=e._b.indexOf(t,p+t.length)}s+=c;if(!s)ok=false;sc+=s});
+  if(ok)out.push([sc,e])});
+ out.sort(function(a,b){return b[0]-a[0]});
+ sug.hidden=true;res.hidden=false;
+ if(!out.length){res.innerHTML='';meta.textContent='“'+v+'” matched nothing. Try other words, or browse the areas below.';sug.hidden=false;return}
+ meta.textContent='“'+v+'” search results: '+out.length+'';
+ var re=rx(tokens);
+ res.innerHTML=out.slice(0,30).map(function(x){var e=x[1];return '<li><span class="kind">'+esc(e.c)+(e.g?'<i>'+esc(e.g)+'</i>':'')+(e.d?'<i>'+esc(e.d)+'</i>':'')+'</span><a href="'+e.u+'">'+mark(e.t,re)+'</a><p>'+snip(e,tokens,re)+'</p></li>'}).join('');
+ clearTimeout(tm);tm=setTimeout(function(){if(v.length>1&&v!==last&&window.gtag){last=v;try{gtag('event','search',{search_term:v})}catch(e){}}},1500);
+}
+document.getElementById('sf').addEventListener('submit',function(ev){ev.preventDefault();run(true)});
+q.addEventListener('input',function(){run(true)});
+fetch('search-index.json').then(function(r){return r.json()}).then(function(d){data=d.map(function(e){e._t=ns(e.t);e._s=ns(e.s);e._k=ns(e.k||'');e._b=ns(e.b);return e});
+ var m=/[?&]q=([^&]*)/.exec(location.search);if(m){try{q.value=decodeURIComponent(m[1].replace(/\+/g,' '))}catch(e){q.value=m[1]}}run(false)})
+ .catch(function(){meta.textContent='Could not load the search index. Please try again shortly.'});
+})();
+</script></div></article></main><footer><div class="wrap"><nav aria-label="Footer menu" class="fnav"><a href="about.html">About the Doctor</a><a href="record.html">Surgical Record</a><a href="research.html">Research</a><a href="education.html">Patient Education</a><a href="press.html">Press &amp; Writing</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></nav><p>The articles on this site are general medical information and do not replace individual diagnosis or treatment. If you have symptoms, please see a nearby medical facility.</p><p>© 2026 Hee Seung Nam. The views on this site are not the official position of my institution.</p><p class="copyright">The copyright of the text and photographs on this site belongs to Hee Seung Nam. Copying and redistribution without permission are prohibited. When quoting, please credit the source (orthonam.com).</p></div></footer><script>(function(){var KEYS={c:1,a:1,s:1,u:1,x:1,p:1};function okNode(n){while(n){if(n.nodeType===1&&n.matches&&n.matches('a[href^="mailto:"],input,textarea'))return true;n=n.parentNode;}return false;}function selOk(){var s=window.getSelection();return s&&s.rangeCount>0&&okNode(s.anchorNode)&&okNode(s.focusNode);}document.addEventListener("contextmenu",function(e){if(!okNode(e.target))e.preventDefault();});document.addEventListener("dragstart",function(e){e.preventDefault();});document.addEventListener("selectstart",function(e){if(!okNode(e.target))e.preventDefault();});document.addEventListener("keydown",function(e){var k=(e.key||"").toLowerCase();if((e.ctrlKey||e.metaKey)&&KEYS[k]&&!((k==="c"||k==="a")&&selOk())){e.preventDefault();}});document.addEventListener("copy",function(e){var s=window.getSelection(),t=s?String(s):"";if(!t||selOk()||!e.clipboardData)return;var src="\n\nSource: Hee Seung Nam, orthonam.com "+location.href.split("#")[0]+"\nThe copyright of this article belongs to Hee Seung Nam. Copying and redistribution without permission are prohibited.";e.clipboardData.setData("text/plain",t+src);e.preventDefault();});})();</script><script defer="" src="../site.js"></script></body></html>
