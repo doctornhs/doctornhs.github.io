@@ -244,3 +244,4 @@ html[data-fs] table.sched{font-size:15px}
 .site-tools .t-lang{font-weight:600}
 html[lang=en] body{word-break:normal;overflow-wrap:break-word;hyphens:manual}
 @media print{html[lang=en] body::before{content:"This page cannot be printed."}html[lang=en] body::after{content:"Please read this on orthonam.com. © Hee Seung Nam. Copying and redistribution without permission are prohibited."}}
+.quote::after{content:"\201D";position:absolute;right:-6px;bottom:-24px;font:500 72px/.62 var(--latin);color:var(--accent);background:var(--paper);padding:0 8px}
